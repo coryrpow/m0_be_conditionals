@@ -1,5 +1,8 @@
-age = 32
+age = 33
 
-if age = 32
-    puts "Even"
+if age.even?
+    puts "even"
+else 
+    puts "odd"
 end
+puts age
