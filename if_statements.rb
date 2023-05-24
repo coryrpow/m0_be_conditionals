@@ -60,7 +60,7 @@ puts "I don't have enough money for a gumball"
 
 if num_quarters >= 2
   p "I have enough money for a gumball"
-elsif num_quarters <= 2
+else
   p "I don't have enough money for a gumball"
 end
 
@@ -68,7 +68,7 @@ end
 num_quarters = 5
 if num_quarters >= 2
   p "I have enough money for a gumball"
-elsif num_quarters <= 2
+else
   p "I don't have enough money for a gumball"
 end
 
@@ -90,27 +90,35 @@ end
 cups_of_flour = 1
 has_sauce = true
 
-if cups_of_flour == 1 && has_sauce == true
-  p "I cannot make pizza"
+if cups_of_flour >= 2 && has_sauce == true
+  p "I can make a pizza"
+else p "I cannot make a pizza"
 end
+puts cups_of_flour && has_sauce
+
 
 cups_of_flour = 5
 has_sauce = false
 
-if cups_of_flour == 5 && has_sauce == false
-  p "I cannot make pizza"
+if cups_of_flour >= 2 && has_sauce == true
+  p "I can make a pizza"
+else p "I cannot make a pizza"
 end
+puts cups_of_flour && has_sauce
+
 
 cups_of_flour = 2
 has_sauce = true
-
-if cups_of_flour == 2 && has_sauce == true
-  p "I can make pizza"
+if cups_of_flour >= 2 && has_sauce == true
+  p "I can make a pizza"
+else p "I cannot make a pizza"
 end
+puts cups_of_flour && has_sauce
 
 cups_of_flour = 3
 has_sauce = true
-
-if cups_of_flour == 3 && has_sauce == true
-  p "I can make pizza"
+if cups_of_flour >= 2 && has_sauce == true
+  p "I can make a pizza"
+else p "I cannot make a pizza"
 end
+puts cups_of_flour && has_sauce
